@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title>
+		CALCULATOR
+	</title>
+	<style>
+		#display{
+			Height:100px;
+			Width:500px;
+			font-size: 30px;
+			font-weight:10px;
+			text-align: right;
+			background-color: khaki;
+		}
+		body{
+			margin-left:350px;
+		}
+	
+	.buttons {
+		height:90px;
+		Width:120px;
+		border-radius:10px;
+		font-size:50px;
+		padding:3px;
+		text-shadow: 2px black  ;
+
+		
+		
+		
+
+		
+	}
+	.container{
+		border:1px solid black;
+		background-color: lightgray;
+		Height:600px;
+		Width:600px;
+	}
+</style>
+</head>
+<script src="Calculator1.js" > </script>
+<body>
+	
+	<table>
+    
+ 
+ 	<tr > <td colspan="4"> <input type="Text" id = "display"  placeholder=""></td></tr>
+	
+	<tr >
+	 <td><input class ="buttons" type="button" value="C" onclick="cleardata('C')" > </td>
+	<td><input class ="buttons" type="button" value="/" onclick="getData('/'')"></td>
+	<td> <input class ="buttons" type="button" value="*" onclick="getData('*')" > </td>
+	<td> <input class ="buttons"  type="button" value="X" onclick="getData('X')"> </td>
+	 </tr>
+	<tr>
+	 <td> <input  class ="buttons" type="button" value="7" onclick="getData(7)"> </td>
+	<td> <input class ="buttons" type="button" value="8" onclick="getData(8)"> </td>
+	<td> <input class ="buttons" type="button" value="9" onclick="getData(9)"> </td>
+	<td> <input class ="buttons" type="button" value="-" onclick="getData('-')"> </td> </tr>
+	<tr> <td> <input class ="buttons" type="button" value="4" onclick="getData(4)"> </td>
+	<td> <input class ="buttons" type="button" value="5" onclick="getData(5)"> </td>
+	<td> <input class ="buttons" type="button" value="6" onclick="getData(6)"> </td> 
+	<td>  <input class ="buttons"  type="button" value="+" onclick="getData('+')"> </td> </tr>
+	<tr> <td> <input class ="buttons" type="button" value="1" onclick="getData(1)"> </td>
+	<td> <input class ="buttons" type="button" value="2" onclick="getData(2)"> </td>
+	<td> <input class ="buttons" type="button" value="3" onclick="getData(3)"> </td>
+			<td rowspan="2"> <input class ="buttons" type="button" value="=" onclick="equalto()" style="Height:180px"> </td> </tr>
+	<tr> <td> <input class ="buttons" type="button" value="%" onclick="getData('%')"> </td>
+	<td> <input class ="buttons" type="button" value="0" onclick="getData(0)"> </td>
+	<td> <input class ="buttons" type="button" value="." onclick="getData('.')"> </td>
+	</tr>
+
+
+</table>
+
+</body>
+</html>
